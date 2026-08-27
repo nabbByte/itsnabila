@@ -406,3 +406,143 @@ iframe {
         max-width: 100%;
     }
 }
+
+/* ===== MOBILE OVERFLOW FIX ===== */
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+body {
+    position: relative;
+}
+
+main,
+section,
+footer,
+nav {
+    max-width: 100%;
+    overflow-x: clip;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+    max-width: 100%;
+}
+
+.row {
+    max-width: 100%;
+}
+
+/* Prevent long text from creating horizontal overflow */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+a {
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+}
+
+/* Flex children must be allowed to shrink */
+.row > *,
+.d-flex > *,
+.flex-row > * {
+    min-width: 0;
+}
+
+.contact-info > div {
+    min-width: 0;
+}
+
+.contact-info > div span {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+
+    .container,
+    .container-fluid {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-inner {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-section h1 {
+        max-width: 100%;
+    }
+
+    .role-line {
+        max-width: 100%;
+    }
+
+    .role-rotator {
+        max-width: 100%;
+        overflow: hidden;
+    }
+
+    .hero-copy,
+    .about-content,
+    .project-body,
+    .certificate-body,
+    .contact-panel {
+        max-width: 100%;
+    }
+
+    .hero-actions,
+    .contact-actions,
+    .social-icons {
+        max-width: 100%;
+    }
+
+    .btn {
+        max-width: 100%;
+    }
+
+    .timeline-card {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .experience-content {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .experience-list {
+        max-width: 100%;
+    }
+
+    .experience-list > div {
+        min-width: 0;
+    }
+
+    .footer-grid,
+    .footer-bottom {
+        max-width: 100%;
+    }
+
+    .footer-grid a {
+        overflow-wrap: anywhere;
+    }
+}
