@@ -346,3 +346,63 @@ section{scroll-margin-top:78px}
     html{scroll-behavior:auto}
     *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
 }
+
+html,
+body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+* {
+    max-width: 100%;
+}
+
+.container,
+.container-fluid {
+    width: 100%;
+}
+
+img,
+video,
+iframe {
+    max-width: 100%;
+    height: auto;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-inner {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-photo-wrap,
+    .about-photo-card,
+    .skills-card,
+    .skills-image-card,
+    .project-card,
+    .timeline-card,
+    .certificate-card,
+    .contact-panel {
+        max-width: 100%;
+    }
+
+    .project-image img,
+    .certificate-image img,
+    .hero-photo,
+    .about-photo-card img {
+        max-width: 100%;
+    }
+}
